@@ -1,3 +1,31 @@
+// coding challenge 1
+// formula for BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
+
+/*
+Your tasks:
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both versions)
+3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+
+Test data:
+Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95m tall.
+Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76m tall.
+*/
+let markStats = { weight: 78, height: 1.69 };
+let johnStats = { weight: 92, height: 1.95 };
+let markBMI = markStats.weight / (markStats.height * markStats.height);
+let johnBMI = johnStats.weight / (johnStats.height * johnStats.height);
+let markHigherBMI = markBMI > johnBMI;
+
+console.log(markHigherBMI, markBMI, johnBMI);
+
+//
+// coding challenge 2
+//
+// take the same values as above but place them in a string literal 
+const bmiStringLiteral = ` Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`;
+console.log(bmiStringLiteral);
+
 /*
 ////////////////////////////////////
 // Linking a JavaScript File
@@ -35,10 +63,10 @@ console.log(myFirstJob);
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
-// console.log(typeof true);
+console.log(typeof true);
 console.log(typeof javascriptIsFun);
-// console.log(typeof 23);
-// console.log(typeof 'Jonas');
+console.log(typeof 23);
+console.log(typeof 'Jonas');
 
 javascriptIsFun = 'YES!';
 console.log(typeof javascriptIsFun);
@@ -51,6 +79,7 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
+
 
 ////////////////////////////////////
 // let, const and var
