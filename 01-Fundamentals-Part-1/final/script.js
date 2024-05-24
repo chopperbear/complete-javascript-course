@@ -11,6 +11,7 @@ Test data:
 Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95m tall.
 Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76m tall.
 */
+/*
 let markStats = { weight: 78, height: 1.69 };
 let johnStats = { weight: 92, height: 1.95 };
 let markBMI = markStats.weight / (markStats.height * markStats.height);
@@ -25,6 +26,25 @@ console.log(markHigherBMI, markBMI, johnBMI);
 // take the same values as above but place them in a string literal 
 const bmiStringLiteral = ` Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`;
 console.log(bmiStringLiteral);
+*/
+
+// coding challenge 3
+/* 
+Test data:
+- Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+- Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+- Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+*/
+let dolphinsAvg = (96 + 108 + 89) / 3;
+let koalasAvg = (88 + 91 + 110) / 3;
+if (dolphinsAvg > koalasAvg) {
+  console.log('dolphins win', dolphinsAvg, koalasAvg);
+} else if (dolphinsAvg == koalasAvg) {
+  console.log('draw', dolphinsAvg, koalasAvg);
+} else {
+  console.log('koalas win', dolphinsAvg, koalasAvg);
+}
+
 
 /*
 ////////////////////////////////////
